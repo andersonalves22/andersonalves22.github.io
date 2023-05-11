@@ -1,93 +1,37 @@
-body {
-    margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-}
+@import "/css/global/global.css";
+@import "/css/utilidades/tipografia.css";
+@import "/css/utilidades/cores.css";
 
-ul {
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
-}
 
-a {
- list-style: none;
-}
+@import "/css/global/header.css";
 
-.header-bg {
-    background-color: #000000;
-}
+/* utilidades */
+@import "/css/utilidades/componentes.css";
+@import "/css/utilidades/formulario.css";
 
-.header {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    max-width: 1200px;
-    box-sizing: border-box;
-    margin-left: auto;
-    margin-right: auto;
-}
+/* Home */
+@import "/css/home/introdução.css";
+@import "/css/home/tecnologia.css";
+@import "/css/home/parceiros.css";
+@import "/css/home/depoimentos.css";
 
-.header-menu {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-}
+/* Bicicletas */
+@import "/css/bicicletas-art/bicicletas-lista.css";
+@import "/css/bike/bicicletas.css";
+@import "/css/bicicletas/bicicletas.css";
+@import "/css/bicicletas/seguro.css";
 
-.header-menu a {
-    color: #ffffff;
-    display: inline-block;
-    padding: 16px 0px;
-    font-size: 18px;
-    text-decoration: none;
-}
+/* Seguros */
+@import "/css/seguros/seguros.css";
+@import "/css/seguros/vantagens.css";
+@import "/css/seguros/perguntas.css";
 
-.header-menu a:after {
-    content: '';
-    display: block;
-    height: 2px;
-    width: 0px;
-    background: #ffffff;
-    margin-top: 4px;
-    position: absolute;
-}
+/* Contato */
+@import "/css/contato/contato.css";
+@import "/css/contato/lojas.css";
 
-.header-menu a:hover:after {
-    width: 100%;
-    transition: .6s;
-    position: relative;
-}
+/* Orçamento */
+@import "/css/orçamento/orçamento.css";
 
-@media (max-width: 800px) {
-    .header-menu {
-        gap: 20px;
-    }
-
-    .header-menu a {
-        background: #111111;
-        padding: 12px 16px;
-        border-radius: 4px;
-    }
-
-    .header-menu a:hover {
-        background-color: #2e2e2e;
-    }
-
-    .header a:after {
-        display: none;
-    }
-}
-
-@media (max-width: 500px) {
-    .header-menu {
-        gap: 12px;
-    }
-
-    .header-menu a {
-        padding: 8px 12px;
-        font-size: 14px;
-    }
-
-}
+/* Termos */
+@import "/css/termos/termos.css";
